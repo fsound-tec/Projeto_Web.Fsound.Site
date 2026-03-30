@@ -345,3 +345,158 @@ h3 {
 .icone--branco {
     filter: brightness(0) invert(1);
 }
+
+/* ── Hamburger (oculto no desktop) ──────────────────── */
+.hamburger {
+    display: none;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px;
+}
+
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 1px;
+    transition: transform 0.28s, opacity 0.28s;
+    transform-origin: center;
+}
+
+.hamburger.aberto span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.aberto span:nth-child(2) { opacity: 0; }
+.hamburger.aberto span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── Drawer mobile (oculto no desktop) ──────────────── */
+#drawer {
+    display: none;
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--cor-primaria);
+    z-index: 99;
+    padding: 20px 24px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+#drawer.aberto {
+    transform: translateX(0);
+    pointer-events: all;
+}
+
+.drawer__link {
+    display: block;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+}
+
+.drawer__link:last-of-type { border-bottom: none; }
+.drawer__link.ativo { color: #fff; border-bottom-color: rgba(255,255,255,0.25); }
+.drawer__link:active { color: #fff; }
+
+.drawer__wpp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #25d366;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: var(--raio);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-top: 28px;
+    text-decoration: none;
+}
+
+/* ── Responsivo mobile ───────────────────────────────── */
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #drawer {
+        display: block;
+    }
+
+    .container {
+        padding: 0 18px;
+    }
+
+    .secao {
+        padding: 44px 0;
+    }
+
+    .titulo-secao {
+        font-size: 1.4rem;
+    }
+
+    /* Footer — 2 colunas no tablet */
+    .rodape__grade {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 36px 0 28px;
+    }
+
+    /* Cookie bar — empilhado */
+    #cookie-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px 18px 20px;
+        font-size: 0.82rem;
+    }
+
+    .cookie-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .faixa-cta {
+        padding: 40px 18px;
+    }
+
+    .faixa-cta h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rodape__grade {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .rodape__fundo {
+        padding: 14px 18px;
+        font-size: 0.72rem;
+        line-height: 1.7;
+    }
+}

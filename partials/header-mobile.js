@@ -51,10 +51,10 @@ document.getElementById("header-placeholder").outerHTML = `
                 rel="noopener"
                 onclick="fecharMenu()">
                 <img
-                    src="icones/whatsapp-logo.svg"
-                    alt=""
-                    width="16"
-                    height="16"
+                    src="./images/icones/whatsapp-logo.svg"
+                    alt="Logo do WhatsApp"
+                    width="20"
+                    height="20"
                     class="icone icone--branco"
                 />
                     Fale pelo WhatsApp

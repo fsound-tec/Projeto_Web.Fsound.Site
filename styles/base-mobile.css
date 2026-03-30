@@ -24,6 +24,7 @@
 html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
 }
 
 body {
@@ -170,7 +171,7 @@ h3 {
 }
 
 .logo img {
-    height: 30px;
+    height: 28px;
 }
 
 .logo__nome {
@@ -263,7 +264,7 @@ h3 {
     color: #fff;
     padding: 14px 18px;
     border-radius: var(--raio);
-    font-size: 0.95rem;
+    font-size: 16px;
     font-weight: 700;
     margin-top: 28px;
 }
@@ -292,6 +293,7 @@ h3 {
 #rodape {
     background: var(--cor-primaria);
     color: white;
+    padding-bottom: 36px;
 }
 
 .rodape__marca {

@@ -102,3 +102,43 @@
     color: var(--txt-medio);
     line-height: 1.65;
 }
+
+/* ── Responsivo mobile ───────────────────────────────── */
+@media (max-width: 768px) {
+    .page-topo {
+        padding: 36px 0 28px;
+    }
+
+    .page-topo h1 {
+        font-size: 1.65rem;
+    }
+
+    .sobre__grade {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .sobre__imagem {
+        min-height: unset;
+    }
+
+    .sobre__nums {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 18px;
+        margin-top: 18px;
+    }
+
+    .sobre__num strong {
+        font-size: 1.4rem;
+    }
+
+    .valores__grade {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .valor__card {
+        padding: 20px 18px;
+    }
+}

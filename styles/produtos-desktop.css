@@ -79,3 +79,29 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/* ── Responsivo mobile ───────────────────────────────── */
+@media (max-width: 768px) {
+    .page-topo {
+        padding: 36px 0 28px;
+    }
+
+    .page-topo h1 {
+        font-size: 1.65rem;
+    }
+
+    .prod__grade {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .prod__corpo {
+        padding: 14px 14px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prod__grade {
+        grid-template-columns: 1fr;
+    }
+}

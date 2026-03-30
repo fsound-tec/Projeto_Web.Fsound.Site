@@ -71,7 +71,8 @@
     color: var(--txt-claro);
 }
 
-.contato__valor a, p {
+.contato__valor a,
+.contato__valor p {
     color: var(--txt);
     font-weight: 600;
     font-size: 0.93rem;
@@ -146,4 +147,28 @@
 /* Rodapé com margem para afastar do formulário */
 #rodape {
     margin-top: 72px;
+}
+
+/* ── Responsivo mobile ───────────────────────────────── */
+@media (max-width: 768px) {
+    .page-topo {
+        padding: 36px 0 28px;
+    }
+
+    .page-topo h1 {
+        font-size: 1.65rem;
+    }
+
+    .contato__grade {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form__grupo--2 {
+        grid-template-columns: 1fr;
+    }
+
+    #rodape {
+        margin-top: 0;
+    }
 }

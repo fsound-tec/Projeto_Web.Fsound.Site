@@ -135,3 +135,56 @@
     margin-bottom: 14px;
     line-height: 1.75;
 }
+
+/* ── Responsivo mobile ───────────────────────────────── */
+@media (max-width: 768px) {
+    #home {
+        padding: 44px 0 36px;
+    }
+
+    .hero__inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .hero__titulo {
+        font-size: 1.85rem;
+    }
+
+    .hero__texto {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+
+    .hero__acoes {
+        flex-direction: column;
+    }
+
+    .hero__acoes .btn {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .hero__imagem {
+        min-height: unset;
+    }
+
+    .destaque__grade {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .destaque__card {
+        padding: 20px 18px;
+    }
+
+    .resumo__grade {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .resumo__imagem {
+        min-height: unset;
+    }
+}

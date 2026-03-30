@@ -60,7 +60,7 @@
     color: var(--txt-claro);
 }
 
-.contato__valor a, p {
+.contato__valor a, .contato__valor p {
     color: var(--txt);
     font-weight: 600;
     font-size: 0.9rem;
