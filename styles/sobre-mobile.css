@@ -1,0 +1,104 @@
+/* Topo */
+.page-topo {
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 36px 18px 32px;
+}
+
+    .page-topo h1 {
+        font-size: 1.65rem;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    .page-topo p {
+        color: white;
+        font-size: 0.9rem;
+    }
+
+.breadcrumb {
+    font-size: 0.73rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+    .breadcrumb a {
+        color: white;
+    }
+
+/* Sobre */
+.sobre__imagem {
+    border-radius: var(--raio);
+    overflow: hidden;
+    min-height: 200px;
+    margin-bottom: 22px;
+}
+
+    .sobre__imagem img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.sobre__texto {
+    color: var(--txt-medio);
+    margin-bottom: 12px;
+    font-size: 0.93rem;
+    line-height: 1.72;
+}
+
+.sobre__nums {
+    display: flex;
+    margin-top: 22px;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    overflow: hidden;
+}
+
+.sobre__num {
+    flex: 1;
+    text-align: center;
+    padding: 14px 8px;
+    border-right: 1px solid var(--borda);
+}
+
+    .sobre__num:last-child {
+        border-right: none;
+    }
+
+    .sobre__num strong {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--cor-primaria);
+    }
+
+    .sobre__num span {
+        font-size: 0.75rem;
+        color: var(--cor-primaria);
+    }
+
+/* Valores */
+.valor__card {
+    background: var(--bg);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 20px 18px;
+    margin-bottom: 14px;
+}
+
+    .valor__card:last-child {
+        margin-bottom: 0;
+    }
+
+.valor__card__titulo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.valor__card__texto {
+    font-size: 0.87rem;
+    color: var(--txt-medio);
+    line-height: 1.6;
+}

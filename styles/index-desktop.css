@@ -1,0 +1,137 @@
+/* Hero */
+#home {
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 88px 0 80px;
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.hero__tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 18px;
+}
+
+.hero__titulo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.18;
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+.hero__texto {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 32px;
+    max-width: 440px;
+}
+
+.hero__acoes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero__imagem {
+    border-radius: var(--raio);
+    min-height: 300px;
+}
+
+.hero__imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--raio);
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel__slide {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Destaques da home */
+.destaque__grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.destaque__card {
+    background: var(--bg);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 28px 24px;
+}
+
+.destaque__card__icone {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.destaque__card__titulo {
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--txt);
+    margin-bottom: 8px;
+}
+
+.destaque__card__texto {
+    font-size: 0.88rem;
+    color: var(--txt-medio);
+    line-height: 1.65;
+}
+
+/* Resumo da empresa */
+.resumo__grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.resumo__imagem {
+    border-radius: var(--raio);
+    overflow: hidden;
+    min-height: 280px;
+}
+
+.resumo__imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resumo__texto {
+    color: var(--txt-medio);
+    margin-bottom: 14px;
+    line-height: 1.75;
+}

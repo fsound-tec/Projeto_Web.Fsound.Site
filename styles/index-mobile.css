@@ -1,0 +1,118 @@
+/* Hero */
+#home {
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 44px 0 40px;
+}
+
+.hero__tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-bottom: 14px;
+}
+
+.hero__titulo {
+    font-size: 1.85rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.hero__texto {
+    font-size: 0.95rem;
+    color: white;
+    margin-bottom: 26px;
+}
+
+.hero__acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero__imagem {
+    border-radius: var(--raio);
+    margin-top: 28px;
+}
+
+    .hero__imagem img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--raio);
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.carousel__slide {
+    min-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Cards de destaque */
+.destaque__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.destaque__card {
+    background: var(--bg);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 20px 18px;
+}
+
+.destaque__card__icone {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.destaque__card__titulo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.destaque__card__texto {
+    font-size: 0.87rem;
+    color: var(--txt-medio);
+    line-height: 1.6;
+}
+
+/* Resumo empresa */
+.resumo__imagem {
+    border-radius: var(--raio);
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+    .resumo__imagem img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+.resumo__texto {
+    color: var(--txt-medio);
+    margin-bottom: 12px;
+    font-size: 0.93rem;
+    line-height: 1.72;
+}

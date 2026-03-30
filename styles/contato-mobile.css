@@ -1,0 +1,119 @@
+/* Topo */
+.page-topo {
+    background: var(--cor-primaria);
+    color: #fff;
+    padding: 36px 18px 32px;
+}
+
+.page-topo h1 {
+    font-size: 1.65rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.page-topo p {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.breadcrumb {
+    font-size: 0.73rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    color: white;
+}
+
+/* Contato */
+.contato__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--borda);
+}
+
+.contato__item:last-child {
+    border-bottom: none;
+}
+
+.contato__icone {
+    width: 38px;
+    height: 38px;
+    background: var(--cor-primaria);
+    color: #fff;
+    border-radius: var(--raio);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.contato__label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: var(--txt-claro);
+}
+
+.contato__valor a, p {
+    color: var(--txt);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Formulário */
+.form__titulo {
+    font-size: 0.97rem;
+    font-weight: 700;
+    margin: 36px 0 16px;
+}
+
+.form__grupo {
+    margin-bottom: 13px;
+}
+
+.form__grupo label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--txt-medio);
+}
+
+.form__grupo input,
+.form__grupo textarea,
+.form__grupo select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    font-family: var(--fonte);
+    font-size: 1rem;
+    color: var(--txt);
+    background: var(--bg);
+    -webkit-appearance: none;
+    transition: border-color 0.18s;
+}
+
+.form__grupo input:focus,
+.form__grupo textarea:focus,
+.form__grupo select:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+.form__grupo textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.form__aviso {
+    font-size: 0.76rem;
+    color: var(--txt-claro);
+    margin-top: 10px;
+}

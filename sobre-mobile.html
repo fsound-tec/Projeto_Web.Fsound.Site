@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+
+        <title>Sobre | Fsound</title>
+
+        <meta
+            name="description"
+            content="Conheça a história, missão e valores da Fsound — pioneira em rádios solares no Brasil."
+        />
+        <meta name="robots" content="index, follow" />
+
+        <link rel="icon" href="./images/logos/favicon.ico" />
+
+        <meta name="theme-color" content="#0084b9" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/base-mobile.css" />
+        <link rel="stylesheet" href="styles/sobre-mobile.css" />
+    </head>
+    <body>
+        <div id="header-placeholder"></div>
+        <script src="partials/header-mobile.js"></script>
+
+        <div class="page-topo">
+            <p class="breadcrumb">
+                <a href="index-mobile.html">Início</a> › Sobre
+            </p>
+            <h1>Sobre a Fsound</h1>
+            <p>Conheça nossa história, missão e valores.</p>
+        </div>
+
+        <!-- HISTÓRIA -->
+        <section class="secao">
+            <div class="container">
+                <div class="sobre__imagem">
+                    <img
+                        src="./images/banners-sem-fundo/sessao-tres-radios-lateral-colorido.png"
+                        alt="Produtos Fsound"
+                    />
+                </div>
+                <div class="cabecalho-secao">
+                    <span class="label-secao">Nossa História</span>
+                    <h2 class="titulo-secao">Quem Somos</h2>
+                    <div class="separador"></div>
+                </div>
+                <p class="sobre__texto">
+                    A Fsound foi fundada para tornar o áudio de qualidade
+                    acessível a todos. O que começou como uma iniciativa de
+                    trazer rádios solares ao mercado brasileiro evoluiu para uma
+                    linha completa de produtos de áudio.
+                </p>
+                <p class="sobre__texto">
+                    De rádios retrô e vintage a caixas de som modernas com e sem
+                    tecnologia solar, com mais de 10 anos de experiência no
+                    segmento, seguimos comprometidos com inovação, durabilidade
+                    e o melhor custo-benefício.
+                </p>
+                <p class="sobre__texto">
+                    Somos especialistas em linhas de áudio com garantia de 1 ano
+                    em todos os produtos, atendendo distribuidores e
+                    consumidores em todo o Brasil.
+                </p>
+                <div class="sobre__nums">
+                    <div class="sobre__num">
+                        <strong>+10</strong><span>Anos</span>
+                    </div>
+                    <div class="sobre__num">
+                        <strong>17</strong><span>Produtos</span>
+                    </div>
+                    <div class="sobre__num">
+                        <strong>1 ano</strong><span>Garantia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSÃO VISÃO VALORES -->
+        <section class="secao secao--alt">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <span class="label-secao">Nossa Essência</span>
+                    <h2 class="titulo-secao">Missão, Visão e Valores</h2>
+                    <div class="separador"></div>
+                </div>
+                <div class="valor__card">
+                    <h3 class="valor__card__titulo">Missão</h3>
+                    <p class="valor__card__texto">
+                        Oferecer produtos de áudio inovadores com tecnologia
+                        acessível, atendendo com excelência distribuidores e
+                        consumidores em todo o Brasil.
+                    </p>
+                </div>
+                <div class="valor__card">
+                    <h3 class="valor__card__titulo">Visão</h3>
+                    <p class="valor__card__texto">
+                        Ser referência nacional em produtos de áudio acessíveis
+                        e sustentáveis, levando qualidade de som a cada lar
+                        brasileiro.
+                    </p>
+                </div>
+                <div class="valor__card">
+                    <h3 class="valor__card__titulo">Valores</h3>
+                    <p class="valor__card__texto">
+                        Inovação · Qualidade · Acessibilidade · Sustentabilidade
+                        · Compromisso com o cliente · Transparência
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="faixa-cta">
+            <h2>Conheça nossos produtos</h2>
+            <p>
+                Explore nossa linha completa de rádios e caixas de som Fsound.
+            </p>
+            <a href="produtos-mobile.html" class="btn btn--branco btn--bloco"
+                >Ver Catálogo</a
+            >
+        </div>
+
+        <div id="rodape-placeholder"></div>
+        <script src="partials/footer-mobile.js"></script>
+
+        <div id="cookie-bar">
+            <p>
+                Utilizamos cookies para melhorar sua experiência. Ao continuar,
+                você concorda com nossa <a href="#">Política de Privacidade</a>.
+            </p>
+            <button class="cookie-btn" onclick="aceitarCookies()">
+                Aceitar e Continuar
+            </button>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var d = document.getElementById("drawer"),
+                    b = document.getElementById("btnMenu");
+                var a = d.classList.toggle("aberto");
+                b.classList.toggle("aberto", a);
+                document.body.style.overflow = a ? "hidden" : "";
+            }
+
+            function fecharMenu() {
+                document.getElementById("drawer").classList.remove("aberto");
+                document.getElementById("btnMenu").classList.remove("aberto");
+                document.body.style.overflow = "";
+            }
+
+            function toggleAcord(btn) {
+                var c = btn.nextElementSibling;
+                btn.classList.toggle("aberto", c.classList.toggle("aberto"));
+            }
+
+            function aceitarCookies() {
+                localStorage.setItem("cookiesAceitos", "1");
+                document
+                    .getElementById("cookie-bar")
+                    .classList.remove("visivel");
+            }
+
+            window.addEventListener("DOMContentLoaded", function () {
+                if (!localStorage.getItem("cookiesAceitos")) {
+                    setTimeout(function () {
+                        document
+                            .getElementById("cookie-bar")
+                            .classList.add("visivel");
+                    }, 800);
+                }
+            });
+        </script>
+    </body>
+</html>
