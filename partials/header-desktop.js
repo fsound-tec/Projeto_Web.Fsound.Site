@@ -8,9 +8,9 @@ document.getElementById("header-placeholder").outerHTML = `
 
                 <nav class="nav">
                     <a href="/">Início</a>
-                    <a href="/sobre">Sobre</a>
-                    <a href="/produtos">Produtos</a>
-                    <a href="/contato">Contato</a>
+                    <a href="/sobre/index.html">Sobre</a>
+                    <a href="/produtos/index.html">Produtos</a>
+                    <a href="/contato/index.html">Contato</a>
                 </nav>
 
                 <button class="hamburger" id="btnMenu" aria-label="Abrir menu" onclick="toggleMenu()">
@@ -23,9 +23,9 @@ document.getElementById("header-placeholder").outerHTML = `
 
         <nav id="drawer">
             <a class="drawer__link" href="/" onclick="fecharMenu()">Início</a>
-            <a class="drawer__link" href="/sobre" onclick="fecharMenu()">Sobre</a>
-            <a class="drawer__link" href="/produtos" onclick="fecharMenu()">Produtos</a>
-            <a class="drawer__link" href="/contato" onclick="fecharMenu()">Contato</a>
+            <a class="drawer__link" href="/sobre/index.html" onclick="fecharMenu()">Sobre</a>
+            <a class="drawer__link" href="/produtos/index.html" onclick="fecharMenu()">Produtos</a>
+            <a class="drawer__link" href="/contato/index.html" onclick="fecharMenu()">Contato</a>
             <a class="drawer__wpp" href="https://wa.me/551120972094" target="_blank" rel="noopener" onclick="fecharMenu()">
                 <img src="/images/icones/whatsapp-logo.svg" alt="" width="16" height="16" class="icone icone--branco" />
                 Fale pelo WhatsApp
@@ -48,9 +48,10 @@ window.fecharMenu = function () {
 };
 
 (function () {
-    var dir = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
-    if (dir === "") dir = "/";
+    var dir = location.pathname.substring(0, location.pathname.lastIndexOf("/")) || "/";
     document.querySelectorAll(".nav a, .drawer__link").forEach(function (a) {
-        if (a.getAttribute("href") === dir) a.classList.add("ativo");
+        var href = a.getAttribute("href");
+        var section = href === "/" ? "/" : href.substring(0, href.indexOf("/", 1));
+        if (section === dir) a.classList.add("ativo");
     });
 })();

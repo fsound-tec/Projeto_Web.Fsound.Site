@@ -27,20 +27,20 @@ document.getElementById("header-placeholder").outerHTML = `
 
             <a
                 class="drawer__link"
-                href="/sobre"
+                href="/sobre/index.html"
                 onclick="fecharMenu()"
                 >Sobre</a
             >
 
             <a
                 class="drawer__link"
-                href="/produtos"
+                href="/produtos/index.html"
                 onclick="fecharMenu()"
                 >Produtos</a
             >
 
             <a  class="drawer__link"
-                href="/contato"
+                href="/contato/index.html"
                 onclick="fecharMenu()">
                 Contato
             </a>
@@ -63,9 +63,10 @@ document.getElementById("header-placeholder").outerHTML = `
 `;
 
 (function () {
-    var dir = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
-    if (dir === "") dir = "/";
+    var dir = location.pathname.substring(0, location.pathname.lastIndexOf("/")) || "/";
     document.querySelectorAll(".drawer__link").forEach(function (a) {
-        if (a.getAttribute("href") === dir) a.classList.add("ativo");
+        var href = a.getAttribute("href");
+        var section = href === "/" ? "/" : href.substring(0, href.indexOf("/", 1));
+        if (section === dir) a.classList.add("ativo");
     });
 })();

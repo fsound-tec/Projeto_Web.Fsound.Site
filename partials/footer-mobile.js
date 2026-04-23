@@ -14,11 +14,11 @@ document.getElementById("rodape-placeholder").outerHTML = `
                 <div class="acord__corpo">
                     <a href="/">Início</a>
 
-                    <a href="/sobre">Sobre</a>
+                    <a href="/sobre/index.html">Sobre</a>
 
-                    <a href="/produtos">Produtos</a>
+                    <a href="/produtos/index.html">Produtos</a>
 
-                    <a href="/contato">Contato</a>
+                    <a href="/contato/index.html">Contato</a>
                 </div>
             </div>
 
