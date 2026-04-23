@@ -1,16 +1,16 @@
 document.getElementById("header-placeholder").outerHTML = `
         <header id="header">
             <div class="container header__inner">
-                <a href="index-desktop.html" class="logo">
-                    <img src="./images/logos/logo-transparent.png" alt="Fsound" />
+                <a href="/" class="logo">
+                    <img src="/images/logos/logo-transparent.png" alt="Fsound" />
                     <span class="logo__nome">Fsound</span>
                 </a>
 
                 <nav class="nav">
-                    <a href="index-desktop.html">Início</a>
-                    <a href="sobre-desktop.html">Sobre</a>
-                    <a href="produtos-desktop.html">Produtos</a>
-                    <a href="contato-desktop.html">Contato</a>
+                    <a href="/">Início</a>
+                    <a href="/sobre">Sobre</a>
+                    <a href="/produtos">Produtos</a>
+                    <a href="/contato">Contato</a>
                 </nav>
 
                 <button class="hamburger" id="btnMenu" aria-label="Abrir menu" onclick="toggleMenu()">
@@ -22,12 +22,12 @@ document.getElementById("header-placeholder").outerHTML = `
         </header>
 
         <nav id="drawer">
-            <a class="drawer__link" href="index-desktop.html" onclick="fecharMenu()">Início</a>
-            <a class="drawer__link" href="sobre-desktop.html" onclick="fecharMenu()">Sobre</a>
-            <a class="drawer__link" href="produtos-desktop.html" onclick="fecharMenu()">Produtos</a>
-            <a class="drawer__link" href="contato-desktop.html" onclick="fecharMenu()">Contato</a>
+            <a class="drawer__link" href="/" onclick="fecharMenu()">Início</a>
+            <a class="drawer__link" href="/sobre" onclick="fecharMenu()">Sobre</a>
+            <a class="drawer__link" href="/produtos" onclick="fecharMenu()">Produtos</a>
+            <a class="drawer__link" href="/contato" onclick="fecharMenu()">Contato</a>
             <a class="drawer__wpp" href="https://wa.me/551120972094" target="_blank" rel="noopener" onclick="fecharMenu()">
-                <img src="./images/icones/whatsapp-logo.svg" alt="" width="16" height="16" class="icone icone--branco" />
+                <img src="/images/icones/whatsapp-logo.svg" alt="" width="16" height="16" class="icone icone--branco" />
                 Fale pelo WhatsApp
             </a>
         </nav>
@@ -48,10 +48,9 @@ window.fecharMenu = function () {
 };
 
 (function () {
-    var arquivo = location.href.split("/").pop().split("?")[0];
+    var dir = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
+    if (dir === "") dir = "/";
     document.querySelectorAll(".nav a, .drawer__link").forEach(function (a) {
-        if (a.getAttribute("href") === arquivo) {
-            a.classList.add("ativo");
-        }
+        if (a.getAttribute("href") === dir) a.classList.add("ativo");
     });
 })();

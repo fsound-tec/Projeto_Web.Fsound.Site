@@ -70,6 +70,10 @@ h3 {
     background: var(--bg-alt);
 }
 
+secao-altv2 {
+    background: #fff;
+}
+
 .titulo-secao {
     font-size: 1.6rem;
     font-weight: 700;
@@ -225,7 +229,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 28px;
-    padding: 52px 0 40px;
+    padding: 0px 0px 24px;
 }
 
 .rodape__col h5 {
@@ -236,7 +240,10 @@ h3 {
     color: #fff;
     margin-bottom: 14px;
     padding-bottom: 8px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .rodape__col a,
@@ -253,7 +260,7 @@ h3 {
 }
 
 .rodape__fundo {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid #fff;
     padding: 16px 0;
     display: flex;
     align-items: center;
@@ -367,13 +374,21 @@ h3 {
     height: 2px;
     background: #fff;
     border-radius: 1px;
-    transition: transform 0.28s, opacity 0.28s;
+    transition:
+        transform 0.28s,
+        opacity 0.28s;
     transform-origin: center;
 }
 
-.hamburger.aberto span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.aberto span:nth-child(2) { opacity: 0; }
-.hamburger.aberto span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.hamburger.aberto span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+.hamburger.aberto span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.aberto span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
 
 /* ── Drawer mobile (oculto no desktop) ──────────────── */
 #drawer {
@@ -406,9 +421,16 @@ h3 {
     text-decoration: none;
 }
 
-.drawer__link:last-of-type { border-bottom: none; }
-.drawer__link.ativo { color: #fff; border-bottom-color: rgba(255,255,255,0.25); }
-.drawer__link:active { color: #fff; }
+.drawer__link:last-of-type {
+    border-bottom: none;
+}
+.drawer__link.ativo {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+.drawer__link:active {
+    color: #fff;
+}
 
 .drawer__wpp {
     display: flex;

@@ -1,8 +1,8 @@
 document.getElementById("header-placeholder").outerHTML = `
         <header id="header">
             <div class="header__inner">
-                <a href="index-mobile.html" class="logo">
-                    <img src="./images/logos/logo-transparent.png" alt="Fsound" />
+                <a href="/" class="logo">
+                    <img src="/images/logos/logo-transparent.png" alt="Fsound" />
 
                     <span class="logo__nome">Fsound</span>
                 </a>
@@ -20,27 +20,27 @@ document.getElementById("header-placeholder").outerHTML = `
 
         <nav id="drawer">
             <a  class="drawer__link"
-                href="index-mobile.html"
+                href="/"
                 onclick="fecharMenu()">
                 Início
             </a>
 
             <a
                 class="drawer__link"
-                href="sobre-mobile.html"
+                href="/sobre"
                 onclick="fecharMenu()"
                 >Sobre</a
             >
 
             <a
                 class="drawer__link"
-                href="produtos-mobile.html"
+                href="/produtos"
                 onclick="fecharMenu()"
                 >Produtos</a
             >
 
             <a  class="drawer__link"
-                href="contato-mobile.html"
+                href="/contato"
                 onclick="fecharMenu()">
                 Contato
             </a>
@@ -51,7 +51,7 @@ document.getElementById("header-placeholder").outerHTML = `
                 rel="noopener"
                 onclick="fecharMenu()">
                 <img
-                    src="./images/icones/whatsapp-logo.svg"
+                    src="/images/icones/whatsapp-logo.svg"
                     alt="Logo do WhatsApp"
                     width="20"
                     height="20"
@@ -63,13 +63,9 @@ document.getElementById("header-placeholder").outerHTML = `
 `;
 
 (function () {
-  var arquivo = location.href.split("/").pop().split("?")[0];
-
-  var links = document.querySelectorAll(".drawer__link");
-
-  links.forEach(function (a) {
-    if (a.getAttribute("href") === arquivo) {
-      a.classList.add("ativo");
-    }
-  });
+    var dir = location.pathname.substring(0, location.pathname.lastIndexOf("/"));
+    if (dir === "") dir = "/";
+    document.querySelectorAll(".drawer__link").forEach(function (a) {
+        if (a.getAttribute("href") === dir) a.classList.add("ativo");
+    });
 })();

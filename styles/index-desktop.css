@@ -5,6 +5,12 @@
     padding: 88px 0 80px;
 }
 
+#homev2 {
+    background: #fff;
+    color: var(--cor-primaria);
+    padding: 36px 0 18px;
+}
+
 .hero__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,6 +31,18 @@
     margin-bottom: 18px;
 }
 
+.hero__tagv2 {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--color-primaria);
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 18px;
+}
+
 .hero__titulo {
     font-size: 2.4rem;
     font-weight: 700;
@@ -33,9 +51,24 @@
     color: #fff;
 }
 
+.hero__titulov2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.18;
+    margin-bottom: 18px;
+    color: var(--cor-primaria);
+}
+
 .hero__texto {
     font-size: 1rem;
     color: white;
+    margin-bottom: 32px;
+    max-width: 440px;
+}
+
+.hero__textov2 {
+    font-size: 1rem;
+    color: #000;
     margin-bottom: 32px;
     max-width: 440px;
 }

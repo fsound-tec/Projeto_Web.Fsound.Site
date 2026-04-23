@@ -1,8 +1,8 @@
 /* Topo da página interna */
 .page-topo {
-    background: var(--cor-primaria);
-    color: #fff;
-    padding: 52px 0 48px;
+    background: #fff;
+    color: var(--cor-primaria);
+    padding: 52px 0 0;
 }
 
 .page-topo h1 {
@@ -12,22 +12,22 @@
 }
 
 .page-topo p {
-    color: white;
+    color: var(--cor-primaria);
     font-size: 0.95rem;
 }
 
 .breadcrumb {
     font-size: 0.78rem;
-    color: white;
+    color: var(--cor-primaria);
     margin-bottom: 12px;
 }
 
 .breadcrumb a {
-    color: white;
+    color: var(--cor-primaria);
 }
 
 .breadcrumb a:hover {
-    color: #fff;
+    color: var(--cor-secundaria);
 }
 
 /* Grade de produtos */

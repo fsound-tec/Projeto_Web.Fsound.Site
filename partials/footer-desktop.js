@@ -5,13 +5,13 @@ document.getElementById("rodape-placeholder").outerHTML = `
                     <div class="rodape__col">
                         <h5>Navegação</h5>
 
-                        <a href="index-desktop.html">Início</a>
+                        <a href="/">Início</a>
 
-                        <a href="sobre-desktop.html">Sobre</a>
+                        <a href="/sobre">Sobre</a>
 
-                        <a href="produtos-desktop.html">Produtos</a>
+                        <a href="/produtos">Produtos</a>
 
-                        <a href="contato-desktop.html">Contato</a>
+                        <a href="/contato">Contato</a>
                     </div>
 
                     <div class="rodape__col">
@@ -27,7 +27,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                             rel="noopener"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
-                                src="./images/icones/map-pin.svg"
+                                src="/images/icones/map-pin.svg"
                                 alt=""
                                 width="18"
                                 height="18"
@@ -44,7 +44,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                             href="tel:+551120972094"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
-                                src="./images/icones/phone.svg"
+                                src="/images/icones/phone.svg"
                                 alt=""
                                 width="18"
                                 height="18"
@@ -59,12 +59,11 @@ document.getElementById("rodape-placeholder").outerHTML = `
                             rel="noopener"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
-                                src="./images/icones/whatsapp-logo.svg"
+                                src="/images/icones/whatsapp-logo.svg"
                                 alt=""
                                 width="18"
                                 height="18"
                                 class="icone--branco"
-                                class="icone"
                             />
                             WhatsApp</a
                         >
@@ -73,7 +72,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                             href="mailto:comercial@fsound.com.br"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
-                                src="./images/icones/envelope.svg"
+                                src="/images/icones/envelope.svg"
                                 alt=""
                                 width="18"
                                 height="18"
@@ -92,7 +91,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                             rel="noopener"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
-                                src="./images/icones/instagram-logo.svg"
+                                src="/images/icones/instagram-logo.svg"
                                 alt=""
                                 width="18"
                                 height="18"
@@ -107,7 +106,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                             rel="noopener"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
-                                src="./images/icones/facebook-logo.svg"
+                                src="/images/icones/facebook-logo.svg"
                                 alt=""
                                 width="20"
                                 height="20"
@@ -145,7 +144,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
             rel="noopener"
             aria-label="WhatsApp"
             ><img
-                src="./images/icones/whatsapp-logo.svg"
+                src="/images/icones/whatsapp-logo.svg"
                 alt="WhatsApp"
                 width="34"
                 height="34"

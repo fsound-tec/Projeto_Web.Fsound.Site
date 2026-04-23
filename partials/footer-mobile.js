@@ -1,7 +1,7 @@
 document.getElementById("rodape-placeholder").outerHTML = `
         <footer id="rodape">
             <div class="rodape__marca">
-                <img src="logos/logo-branco.png" alt="Fsound" />
+                <img src="/images/logos/logo-branco.png" alt="Fsound" />
 
                 <p>Especialistas em áudio com tecnologia solar.</p>
             </div>
@@ -12,13 +12,13 @@ document.getElementById("rodape-placeholder").outerHTML = `
                 </button>
 
                 <div class="acord__corpo">
-                    <a href="index-mobile.html">Início</a>
+                    <a href="/">Início</a>
 
-                    <a href="sobre-mobile.html">Sobre</a>
+                    <a href="/sobre">Sobre</a>
 
-                    <a href="produtos-mobile.html">Produtos</a>
+                    <a href="/produtos">Produtos</a>
 
-                    <a href="contato-mobile.html">Contato</a>
+                    <a href="/contato">Contato</a>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                         target="_blank"
                         rel="noopener"
                         ><img
-                            src="./images/icones/map-pin.svg"
+                            src="/images/icones/map-pin.svg"
                             alt=""
                             width="14"
                             height="14"
@@ -56,7 +56,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                 <div class="acord__corpo">
                     <a href="tel:+551120972094"
                         ><img
-                            src="./images/icones/phone.svg"
+                            src="/images/icones/phone.svg"
                             alt=""
                             width="14"
                             height="14"
@@ -70,7 +70,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                         target="_blank"
                         rel="noopener"
                         ><img
-                            src="./images/icones/whatsapp-logo.svg"
+                            src="/images/icones/whatsapp-logo.svg"
                             alt=""
                             width="14"
                             height="14"
@@ -81,7 +81,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
 
                     <a href="mailto:comercial@fsound.com.br"
                         ><img
-                            src="./images/icones/envelope.svg"
+                            src="/images/icones/envelope.svg"
                             alt=""
                             width="14"
                             height="14"
@@ -100,7 +100,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                 <div class="acord__corpo">
                     <a href="#" target="_blank" rel="noopener"
                         ><img
-                            src="./images/icones/instagram-logo.svg"
+                            src="/images/icones/instagram-logo.svg"
                             alt=""
                             width="14"
                             height="14"
@@ -111,7 +111,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
 
                     <a href="#" target="_blank" rel="noopener"
                         ><img
-                            src="./images/icones/facebook-logo.svg"
+                            src="/images/icones/facebook-logo.svg"
                             alt=""
                             width="14"
                             height="14"
@@ -149,7 +149,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
             rel="noopener"
             aria-label="WhatsApp"
             ><img
-                src="./images/icones/whatsapp-logo.svg"
+                src="/images/icones/whatsapp-logo.svg"
                 alt="WhatsApp"
                 width="26"
                 height="26"
