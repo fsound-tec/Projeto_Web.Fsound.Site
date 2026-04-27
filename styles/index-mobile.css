@@ -63,8 +63,24 @@
 .carousel__slide {
     min-width: 100%;
     width: 100%;
+    position: relative;
+    display: block;
+}
+
+.carousel__slide img {
+    width: 100%;
     object-fit: cover;
     display: block;
+}
+
+.hero__slide-legenda {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Cards de destaque */
