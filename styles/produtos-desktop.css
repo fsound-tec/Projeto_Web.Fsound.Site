@@ -105,3 +105,113 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* ── Imagem clicável ─────────────────────────────────── */
+.prod__imagem[data-modelo] {
+    cursor: pointer;
+}
+
+.prod__imagem[data-modelo] img {
+    transition: opacity 0.2s;
+}
+
+.prod__imagem[data-modelo]:hover img {
+    opacity: 0.82;
+}
+
+/* ── Modal lightbox ──────────────────────────────────── */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.modal__container {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 2rem;
+}
+
+.modal__fechar {
+    position: absolute;
+    top: 0.85rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: #888;
+    line-height: 1;
+}
+
+.modal__fechar:hover {
+    color: #333;
+}
+
+.modal__conteudo {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.modal__imagem-wrap {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+}
+
+.modal__imagem-wrap img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.modal__ficha {
+    flex: 1 1 260px;
+}
+
+.modal__titulo {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.modal__tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal__tabela td {
+    padding: 0.45rem 0.7rem;
+    border-bottom: 1px solid #eee;
+    font-size: 0.88rem;
+    vertical-align: top;
+}
+
+.modal__tabela td:first-child {
+    font-weight: 600;
+    color: var(--cor-primaria);
+    white-space: nowrap;
+    width: 38%;
+}
