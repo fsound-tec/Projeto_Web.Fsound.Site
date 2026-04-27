@@ -114,6 +114,29 @@
     line-height: 1.6;
 }
 
+.anatel__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    padding: 0.35rem 0.75rem;
+    background: var(--cor-primaria, #02acc5);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.anatel__label {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.anatel__nome {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
 /* Resumo empresa */
 .resumo__imagem {
     border-radius: var(--raio);
