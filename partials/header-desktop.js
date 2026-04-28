@@ -26,7 +26,7 @@ document.getElementById("header-placeholder").outerHTML = `
             <a class="drawer__link" href="/sobre/index.html" onclick="fecharMenu()">Sobre</a>
             <a class="drawer__link" href="/produtos/index.html" onclick="fecharMenu()">Produtos</a>
             <a class="drawer__link" href="/contato/index.html" onclick="fecharMenu()">Contato</a>
-            <a class="drawer__wpp" href="https://wa.me/551120972094" target="_blank" rel="noopener" onclick="fecharMenu()">
+            <a class="drawer__wpp" href="https://wa.me/5511996113888" target="_blank" rel="noopener" onclick="fecharMenu()">
                 <img src="/images/icones/whatsapp-logo.svg" alt="" width="16" height="16" class="icone icone--branco" />
                 Fale pelo WhatsApp
             </a>

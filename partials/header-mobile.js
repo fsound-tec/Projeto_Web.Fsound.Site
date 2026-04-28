@@ -46,7 +46,7 @@ document.getElementById("header-placeholder").outerHTML = `
             </a>
 
             <a  class="drawer__wpp"
-                href="https://wa.me/551120972094"
+                href="https://wa.me/5511996113888"
                 target="_blank"
                 rel="noopener"
                 onclick="fecharMenu()">

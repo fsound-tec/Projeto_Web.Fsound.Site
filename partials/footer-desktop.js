@@ -41,7 +41,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
                         <h5>Contato</h5>
 
                         <a
-                            href="tel:+551120972094"
+                            href="tel:+5511996113888"
                             style="display: flex; align-items: center; gap: 4px"
                             ><img
                                 src="/images/icones/phone.svg"
@@ -50,11 +50,11 @@ document.getElementById("rodape-placeholder").outerHTML = `
                                 height="18"
                                 class="icone--branco"
                             />
-                            (11) 2097-2094</a
+                            (11) 99611-3888</a
                         >
 
                         <a
-                            href="https://wa.me/551120972094"
+                            href="https://wa.me/5511996113888"
                             target="_blank"
                             rel="noopener"
                             style="display: flex; align-items: center; gap: 4px"
@@ -138,7 +138,7 @@ document.getElementById("rodape-placeholder").outerHTML = `
         </footer>
 
         <a
-            href="https://wa.me/551120972094"
+            href="https://wa.me/5511996113888"
             class="wpp-fixo"
             target="_blank"
             rel="noopener"
