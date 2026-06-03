@@ -188,6 +188,7 @@
 
 .modal__ficha {
     flex: 1 1 260px;
+    min-width: 0;
 }
 
 .modal__titulo {
