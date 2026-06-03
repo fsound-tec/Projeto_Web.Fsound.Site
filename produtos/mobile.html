@@ -365,9 +365,7 @@
                     </div>
                     <div class="modal__ficha">
                         <h2 id="modal-titulo" class="modal__titulo"></h2>
-                        <table class="modal__tabela" id="modal-tabela">
-                            <tbody></tbody>
-                        </table>
+                        <div id="modal-ficha-body"></div>
                     </div>
                 </div>
             </div>
@@ -417,14 +415,57 @@
                     nome: "FS-1068 — 800W",
                     imagem: "/images/banners-sem-fundo/FS-1068.png",
                     specs: [
-                        { label: "Potência",      valor: "800W" },
-                        { label: "Conectividade", valor: "Bluetooth · TWS" },
-                        { label: "Entradas",      valor: "USB" },
+                        { label: "Potência",      valor: "800 W" },
+                        { label: "Conectividade", valor: "Bluetooth" },
+                        { label: "Entradas",      valor: "Auxiliar · USB · Cartão TF" },
                         { label: "Rádio",         valor: "FM" },
                         { label: "Microfone",     valor: "Sem Fio" },
                         { label: "Bateria",       valor: "Recarregável" },
-                        { label: "Extras",        valor: "LED · Apoio Celular · Controle Remoto" },
-                        { label: "Certificação",  valor: "Anatel" }
+                        { label: "Tensão",        valor: "Bivolt 110 – 220V" },
+                        { label: "Extras",        valor: "Controle Remoto · Karaokê" }
+                    ],
+                    sections: [
+                        {
+                            titulo: "Características",
+                            tipo: "texto",
+                            conteudo: "Bluetooth, 800 Watts de potência, bateria interna recarregável, compatibilidade com formato MP3, Rádio FM, entrada Auxiliar, USB e Cartão TF, alimentação bivolt 110/220V, controle remoto, microfone sem fio e função Karaokê."
+                        },
+                        {
+                            titulo: "Características Técnicas",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Tensão",           valor: "Bivolt 110 – 220V" },
+                                { label: "Potência",         valor: "800 W" },
+                                { label: "Consumo",          valor: "0,25 kWh" },
+                                { label: "Código Comercial", valor: "FS-1068" }
+                            ]
+                        },
+                        {
+                            titulo: "Informações Fiscais",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "IPI",               valor: "0%" },
+                                { label: "Classificação NCM", valor: "8527.19.00" },
+                                { label: "EAN",               valor: "136 928756 881060" }
+                            ]
+                        },
+                        {
+                            titulo: "Garantia e Nota Fiscal",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Garantia",        valor: "1 ano" },
+                                { label: "Descrição em NF", valor: "CAIXA DE SOM - FS-1068" }
+                            ]
+                        },
+                        {
+                            titulo: "Informações Logísticas",
+                            tipo: "logistica",
+                            headers: ["Embalagem", "Peso (kg)", "Altura (cm)", "Largura (cm)", "Profundidade (cm)", "Volume (m³)", "Qtde"],
+                            rows: [
+                                ["Aparelho",       "3,75", "72",   "75", "21,5", "0,029",  "1"],
+                                ["Caixa Unitária", "4,6",  "29,2", "58", "26,2", "0,0143", "1"]
+                            ]
+                        }
                     ]
                 },
                 "FS-1033": {
@@ -568,13 +609,57 @@
                     nome: "FS-1587 — Solar",
                     imagem: "/images/banners-sem-fundo/FS-1587.png",
                     specs: [
+                        { label: "Potência",      valor: "1 W" },
                         { label: "Energia",       valor: "Painel Solar · Bateria Recarregável" },
                         { label: "Conectividade", valor: "Bluetooth" },
-                        { label: "Rádio",         valor: "AM · FM · 8 Faixas" },
-                        { label: "Entradas",      valor: "USB · TF Card" },
+                        { label: "Rádio",         valor: "FM · AM · SW 1-6" },
+                        { label: "Entradas",      valor: "USB · TF · DC-5V" },
                         { label: "Player",        valor: "MP3" },
-                        { label: "Extras",        valor: "Cordão" },
-                        { label: "Certificação",  valor: "Anatel" }
+                        { label: "Extras",        valor: "Alça · Lanterna · Cabo USB" }
+                    ],
+                    sections: [
+                        {
+                            titulo: "Características",
+                            tipo: "texto",
+                            conteudo: "1 Watt de potência, auto falante 3W, bateria interna recarregável, Bluetooth, compatibilidade com formato MP3, Rádio FM, AM e SW 1-6, entrada USB e TF, entrada DC-5V, alça, cabo para recarga USB, placa solar para carga de bateria e lanterna."
+                        },
+                        {
+                            titulo: "Características Técnicas",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Tensão",           valor: "DC 5V" },
+                                { label: "Potência",         valor: "1 W" },
+                                { label: "Consumo",          valor: "0,25 kWh" },
+                                { label: "Código Comercial", valor: "FS-1587BT" }
+                            ]
+                        },
+                        {
+                            titulo: "Informações Fiscais",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Classificação NCM",  valor: "8527.19.00" },
+                                { label: "EAN13 — Preto",      valor: "7 899444 000034" },
+                                { label: "EAN13 — Prata",      valor: "7 899444 000010" }
+                            ]
+                        },
+                        {
+                            titulo: "Garantia e Nota Fiscal",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Garantia",        valor: "1 ano" },
+                                { label: "Descrição em NF", valor: "RADIO SOLAR F-SOUND FS-1587BT" }
+                            ]
+                        },
+                        {
+                            titulo: "Informações Logísticas",
+                            tipo: "logistica",
+                            headers: ["Embalagem", "Peso (kg)", "Altura (mm)", "Largura (mm)", "Profundidade (mm)", "Volume (m³)", "Qtde"],
+                            rows: [
+                                ["Aparelho",       "0,51",  "103", "171", "58",  "0,001",  "1"],
+                                ["Caixa Unitária", "0,70",  "127", "185", "60",  "0,0014", "1"],
+                                ["Caixa Master",   "21,6",  "480", "355", "370", "0,063",  "40"]
+                            ]
+                        }
                     ]
                 },
                 "FS-100BT": {
@@ -594,13 +679,53 @@
                     nome: "FS-3051",
                     imagem: "/images/banners-sem-fundo/FS-3051.png",
                     specs: [
-                        { label: "Rádio",         valor: "AM · FM" },
-                        { label: "Antena",        valor: "Direcional" },
-                        { label: "Alimentação",   valor: "Pilhas AA" },
-                        { label: "Display",       valor: "Analógico" },
-                        { label: "Entradas",      valor: "Fone de Ouvido" },
-                        { label: "Extras",        valor: "LED · Portátil · Cordão" },
-                        { label: "Certificação",  valor: "Anatel" }
+                        { label: "Potência",    valor: "0,8 W RMS" },
+                        { label: "Rádio",       valor: "AM · FM" },
+                        { label: "Alimentação", valor: "2 Pilhas AA" },
+                        { label: "Entradas",    valor: "Fone de Ouvido" },
+                        { label: "Extras",      valor: "Alça · Portátil" }
+                    ],
+                    sections: [
+                        {
+                            titulo: "Características",
+                            tipo: "texto",
+                            conteudo: "0,8 Watts de potência, funciona com 2 pilhas AA (não inclusas), Rádio FM e AM, entrada para fone de ouvido (não incluso) e alça."
+                        },
+                        {
+                            titulo: "Características Técnicas",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Tensão",           valor: "1,5V" },
+                                { label: "Potência",         valor: "0,8 W RMS" },
+                                { label: "Consumo",          valor: "0,1 kWh" },
+                                { label: "Código Comercial", valor: "FS-3051" }
+                            ]
+                        },
+                        {
+                            titulo: "Informações Fiscais",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Classificação NCM", valor: "8527.19.00" },
+                                { label: "EAN",               valor: "136 938569 542270" }
+                            ]
+                        },
+                        {
+                            titulo: "Garantia e Nota Fiscal",
+                            tipo: "tabela",
+                            specs: [
+                                { label: "Garantia",        valor: "1 ano" },
+                                { label: "Descrição em NF", valor: "RADIO PORTATIL AM/FM FS-3051" }
+                            ]
+                        },
+                        {
+                            titulo: "Informações Logísticas",
+                            tipo: "logistica",
+                            headers: ["Embalagem", "Peso (kg)", "Altura (cm)", "Largura (cm)", "Profundidade (cm)", "Volume (m³)", "Qtde"],
+                            rows: [
+                                ["Aparelho",       "0,11", "11,8", "7",   "3",   "0,0002",   "1"],
+                                ["Caixa Unitária", "0,13", "12,7", "7,8", "3,9", "0,000386", "31"]
+                            ]
+                        }
                     ]
                 }
             };
@@ -611,12 +736,33 @@
                 document.getElementById('modal-img').src = ficha.imagem;
                 document.getElementById('modal-img').alt = ficha.nome;
                 document.getElementById('modal-titulo').textContent = ficha.nome;
-                var tbody = document.querySelector('#modal-tabela tbody');
-                tbody.innerHTML = ficha.specs
-                    .map(function(s) {
-                        return '<tr><td>' + s.label + '</td><td>' + s.valor + '</td></tr>';
-                    })
-                    .join('');
+                var body = document.getElementById('modal-ficha-body');
+                if (ficha.sections) {
+                    body.innerHTML = ficha.sections.map(function(sec) {
+                        var h = '<div class="modal__secao"><h3 class="modal__secao-titulo">' + sec.titulo + '</h3>';
+                        if (sec.tipo === 'texto') {
+                            h += '<p class="modal__texto">' + sec.conteudo + '</p>';
+                        } else if (sec.tipo === 'tabela') {
+                            h += '<table class="modal__tabela"><tbody>' +
+                                sec.specs.map(function(s) {
+                                    return '<tr><td>' + s.label + '</td><td>' + s.valor + '</td></tr>';
+                                }).join('') + '</tbody></table>';
+                        } else if (sec.tipo === 'logistica') {
+                            h += '<div class="modal__logistica-wrap"><table class="modal__logistica"><thead><tr>' +
+                                sec.headers.map(function(hd) { return '<th>' + hd + '</th>'; }).join('') +
+                                '</tr></thead><tbody>' +
+                                sec.rows.map(function(row) {
+                                    return '<tr>' + row.map(function(c) { return '<td>' + c + '</td>'; }).join('') + '</tr>';
+                                }).join('') + '</tbody></table></div>';
+                        }
+                        return h + '</div>';
+                    }).join('');
+                } else {
+                    body.innerHTML = '<table class="modal__tabela"><tbody>' +
+                        ficha.specs.map(function(s) {
+                            return '<tr><td>' + s.label + '</td><td>' + s.valor + '</td></tr>';
+                        }).join('') + '</tbody></table>';
+                }
                 document.getElementById('modal-produto').removeAttribute('hidden');
                 document.body.style.overflow = 'hidden';
             }

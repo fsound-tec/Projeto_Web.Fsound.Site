@@ -215,3 +215,55 @@
     white-space: nowrap;
     width: 38%;
 }
+
+.modal__secao {
+    margin-bottom: 1.1rem;
+}
+
+.modal__secao-titulo {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 0.2rem;
+    margin: 0 0 0.5rem;
+}
+
+.modal__texto {
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: #444;
+    margin: 0;
+}
+
+.modal__logistica-wrap {
+    overflow-x: auto;
+}
+
+.modal__logistica {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.76rem;
+}
+
+.modal__logistica th,
+.modal__logistica td {
+    padding: 0.32rem 0.5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.modal__logistica th {
+    background: var(--cor-primaria);
+    color: #fff;
+    font-weight: 600;
+}
+
+.modal__logistica td:first-child {
+    font-weight: 600;
+    text-align: left;
+    color: var(--cor-primaria);
+}
