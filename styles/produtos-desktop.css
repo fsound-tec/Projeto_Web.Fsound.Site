@@ -144,7 +144,7 @@
     z-index: 1;
     background: #fff;
     border-radius: 10px;
-    max-width: 900px;
+    max-width: 1200px;
     width: 95%;
     max-height: 90vh;
     overflow-y: auto;
@@ -175,7 +175,7 @@
 }
 
 .modal__imagem-wrap {
-    flex: 1 1 300px;
+    flex: 0 0 300px;
     display: flex;
     align-items: center;
 }
