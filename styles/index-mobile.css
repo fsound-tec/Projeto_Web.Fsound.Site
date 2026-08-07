@@ -48,14 +48,18 @@
     }
 
 /* Carousel */
+/* Altura travada: os banners convivem em paisagem (3:2) e retrato (2:3),
+   sem isso o track cresceria até o slide mais alto. */
 .carousel {
     width: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: var(--raio);
 }
 
 .carousel__track {
     display: flex;
+    height: 100%;
     transition: transform 0.5s ease-in-out;
     will-change: transform;
 }
@@ -69,7 +73,8 @@
 
 .carousel__slide img {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
 
