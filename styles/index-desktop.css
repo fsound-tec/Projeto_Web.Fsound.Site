@@ -91,11 +91,11 @@
 }
 
 /* Carousel */
-/* Altura travada: os banners convivem em paisagem (3:2) e retrato (2:3),
+/* Altura travada: os banners são quadrados (1:1),
    sem isso o track cresceria até o slide mais alto. */
 .carousel {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: var(--raio);
 }
@@ -119,16 +119,6 @@
     height: 100%;
     object-fit: contain;
     display: block;
-}
-
-.hero__slide-legenda {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 2rem;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* Destaques da home */
@@ -246,7 +236,7 @@
         min-height: unset;
     }
 
-    /* Coluna única: sem o teto o carrossel 4:3 ocuparia a tela inteira. */
+    /* Coluna única: sem o teto o carrossel 1:1 ocuparia a tela inteira. */
     .carousel {
         max-height: 420px;
     }
