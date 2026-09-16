@@ -102,6 +102,32 @@
     opacity: 0.75;
 }
 
+/* ── Card com ficha técnica (troca no toque) ──────────── */
+.swipe-card__img--ficha {
+    position: relative;
+}
+
+.swipe-card__img--ficha[data-modelo] .swipe-card__foto {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.swipe-card__img--ficha[data-modelo] .swipe-card__foto--produto {
+    opacity: 0;
+}
+
+.swipe-card__img--ficha[data-modelo]:active .swipe-card__foto--ficha {
+    opacity: 0;
+}
+
+.swipe-card__img--ficha[data-modelo]:active .swipe-card__foto--produto {
+    opacity: 1;
+}
+
 /* ── Modal lightbox ──────────────────────────────────── */
 .modal {
     position: fixed;
