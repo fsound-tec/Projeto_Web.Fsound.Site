@@ -267,3 +267,10 @@
     text-align: left;
     color: var(--cor-primaria);
 }
+
+/* Imagem padrão (produto sem foto) — enquadra inteira, sem recorte */
+.img--sem-imagem {
+    object-fit: contain !important;
+    background: var(--bg-alt);
+    padding: 12px;
+}

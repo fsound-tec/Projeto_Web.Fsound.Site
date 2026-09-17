@@ -21,6 +21,9 @@
 
         <link rel="stylesheet" href="styles/base-desktop.css" />
         <link rel="stylesheet" href="styles/produtos-desktop.css" />
+
+        <!-- Imagem padrão para produtos sem foto -->
+        <script src="partials/imagem-padrao.js"></script>
     </head>
     <body>
         <div id="header-placeholder"></div>
@@ -142,8 +145,9 @@
                     <div class="prod__card">
                         <div class="prod__imagem" data-modelo="FS-1061">
                             <img
-                                src="./images/banners-sem-fundo/FS-1061.png"
-                                alt="FS-1061"
+                                class="img--sem-imagem"
+                                src="./images/banners/no-image.webp"
+                                alt="FS-1061 (imagem indisponível)"
                             />
                         </div>
                         <div class="prod__corpo">
@@ -677,7 +681,7 @@
                 },
                 "FS-1061": {
                     nome: "FS-1061 — 180W",
-                    imagem: "./images/banners-sem-fundo/FS-1061.png",
+                    imagem: "", // sem foto própria: usa a imagem padrão
                     specs: [
                         { label: "Potência",      valor: "180 W RMS" },
                         { label: "Conectividade", valor: "Bluetooth" },
@@ -983,7 +987,7 @@
             function abrirModal(modelo) {
                 var ficha = fichasTecnicas[modelo];
                 if (!ficha) return;
-                document.getElementById('modal-img').src = ficha.imagem;
+                definirImagem(document.getElementById('modal-img'), ficha.imagem);
                 document.getElementById('modal-img').alt = ficha.nome;
                 document.getElementById('modal-titulo').textContent = ficha.nome;
                 var body = document.getElementById('modal-ficha-body');
